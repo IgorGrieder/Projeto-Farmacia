@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<TabPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="456.0" prefWidth="753.0" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.SceneController">
+  <tabs>
+    <Tab text="Estoque">
+      <content>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <TextArea fx:id="TextAreaEstoque" layoutX="95.0" layoutY="40.0" prefHeight="266.0" prefWidth="564.0" />
+                  <Button layoutX="340.0" layoutY="332.0" mnemonicParsing="false" onAction="#ManipulaBotoes" prefHeight="26.0" prefWidth="74.0" text="Voltar" />
+                  <Button layoutX="124.0" layoutY="332.0" mnemonicParsing="false" onAction="#ManipulaBotaoListarEstoque" prefHeight="26.0" prefWidth="114.0" text="Listar Estoque" />
+               </children></AnchorPane>
+      </content>
+    </Tab>
+    <Tab text="Adicionar Produto">
+         <content>
+            <TabPane prefHeight="200.0" prefWidth="200.0" tabClosingPolicy="UNAVAILABLE">
+              <tabs>
+                  <Tab text="Farmacos">
+                     <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                              <Label alignment="CENTER" layoutX="75.0" layoutY="23.0" prefHeight="18.0" prefWidth="85.0" text="Nome:">
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font>
+                              </Label>
+                              <Label alignment="CENTER" layoutX="75.0" layoutY="62.0" prefHeight="18.0" prefWidth="85.0" text="Preço:">
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font>
+                              </Label>
+                              <Label alignment="CENTER" layoutX="75.0" layoutY="99.0" prefHeight="18.0" prefWidth="85.0" text="Marca:">
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font>
+                              </Label>
+                              <Label alignment="CENTER" layoutX="72.0" layoutY="135.0" prefHeight="18.0" prefWidth="85.0" text="Código:">
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font>
+                              </Label>
+                              <Label alignment="CENTER" layoutX="26.0" layoutY="175.0" prefHeight="18.0" prefWidth="120.0" text="Receita Restrita:">
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="TxFieldNomeFarmacos" layoutX="156.0" layoutY="23.0" prefHeight="26.0" prefWidth="487.0" />
+                              <TextField fx:id="TxFieldPrecoFarmacos" layoutX="156.0" layoutY="61.0" prefHeight="26.0" prefWidth="487.0" />
+                              <TextField fx:id="TxFieldMarcaFarmacos" layoutX="156.0" layoutY="98.0" prefHeight="26.0" prefWidth="487.0" />
+                              <TextField fx:id="TxFieldCodigoFarmacos" layoutX="156.0" layoutY="135.0" prefHeight="26.0" prefWidth="487.0" />
+                              <TextField fx:id="TxFieldReceita" layoutX="156.0" layoutY="172.0" prefHeight="26.0" prefWidth="487.0" />
+                              <Button layoutX="297.0" layoutY="299.0" mnemonicParsing="false" onAction="#ManipulaAdicionaFarmacos" prefHeight="26.0" prefWidth="107.0" text="Adicionar " />
+                              <Label alignment="CENTER" layoutX="56.0" layoutY="211.0" prefHeight="18.0" prefWidth="132.0" text="Tipo:">
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="TxFieldTipoFarmacos" layoutX="156.0" layoutY="211.0" prefHeight="26.0" prefWidth="487.0" />
+                              <Button layoutX="631.0" layoutY="299.0" mnemonicParsing="false" onAction="#ManipulaBotoes" prefHeight="26.0" prefWidth="74.0" text="Voltar" />
+                              <TextField fx:id="TxFieldContraIndicacaoFarmacos" layoutX="156.0" layoutY="250.0" prefHeight="26.0" prefWidth="487.0" />
+                              <Label alignment="CENTER" layoutX="12.0" layoutY="253.0" prefHeight="18.0" prefWidth="132.0" text="Contra indicaçao:">
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </AnchorPane>
+                     </content>
+                  </Tab>
+                  <Tab text="Alimentos">
+                     <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                              <Label alignment="CENTER" layoutX="75.0" layoutY="23.0" prefHeight="18.0" prefWidth="85.0" text="Nome:">
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font>
+                              </Label>
+                              <Label alignment="CENTER" layoutX="75.0" layoutY="62.0" prefHeight="18.0" prefWidth="85.0" text="Preço:">
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font>
+                              </Label>
+                              <Label alignment="CENTER" layoutX="75.0" layoutY="99.0" prefHeight="18.0" prefWidth="85.0" text="Marca:">
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font>
+                              </Label>
+                              <Label alignment="CENTER" layoutX="72.0" layoutY="135.0" prefHeight="18.0" prefWidth="85.0" text="Código:">
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font>
+                              </Label>
+                              <Label alignment="CENTER" layoutX="31.0" layoutY="175.0" prefHeight="18.0" prefWidth="120.0" text="Valor Calorico:">
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="TxFieldNomeAlimentos" layoutX="156.0" layoutY="23.0" prefHeight="26.0" prefWidth="487.0" />
+                              <TextField fx:id="TxFieldPrecoAlimentos" layoutX="156.0" layoutY="61.0" prefHeight="26.0" prefWidth="487.0" />
+                              <TextField fx:id="TxFieldMarcaAlimentos" layoutX="156.0" layoutY="98.0" prefHeight="26.0" prefWidth="487.0" />
+                              <TextField fx:id="TxFieldCodigoAlimentos" layoutX="156.0" layoutY="135.0" prefHeight="26.0" prefWidth="487.0" />
+                              <TextField fx:id="TxFieldValorCalorico" layoutX="156.0" layoutY="172.0" prefHeight="26.0" prefWidth="487.0" />
+                              <Button layoutX="297.0" layoutY="299.0" mnemonicParsing="false" onAction="#ManipulaAdicionaAlimentos" prefHeight="26.0" prefWidth="107.0" text="Adicionar" />
+                              <Label alignment="CENTER" layoutX="15.0" layoutY="211.0" prefHeight="18.0" prefWidth="132.0" text="Contra indicação:">
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="TxFieldContraIndicacao" layoutX="156.0" layoutY="211.0" prefHeight="26.0" prefWidth="487.0" />
+                              <Button layoutX="631.0" layoutY="299.0" mnemonicParsing="false" onAction="#ManipulaBotoes" prefHeight="26.0" prefWidth="74.0" text="Voltar" />
+                           </children>
+                        </AnchorPane>
+                     </content>
+                  </Tab>
+                  <Tab text="Cosméticos">
+                     <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                              <Label alignment="CENTER" layoutX="75.0" layoutY="23.0" prefHeight="18.0" prefWidth="85.0" text="Nome:">
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font>
+                              </Label>
+                              <Label alignment="CENTER" layoutX="75.0" layoutY="62.0" prefHeight="18.0" prefWidth="85.0" text="Preço:">
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font>
+                              </Label>
+                              <Label alignment="CENTER" layoutX="75.0" layoutY="99.0" prefHeight="18.0" prefWidth="85.0" text="Marca:">
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font>
+                              </Label>
+                              <Label alignment="CENTER" layoutX="72.0" layoutY="135.0" prefHeight="18.0" prefWidth="85.0" text="Código:">
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font>
+                              </Label>
+                              <Label alignment="CENTER" layoutX="93.0" layoutY="175.0" prefHeight="25.0" prefWidth="63.0" text="Tipo:">
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="TxFieldNomeCosmeticos" layoutX="156.0" layoutY="23.0" prefHeight="26.0" prefWidth="487.0" />
+                              <TextField fx:id="TxFieldPrecoCosmeticos" layoutX="156.0" layoutY="61.0" prefHeight="26.0" prefWidth="487.0" />
+                              <TextField fx:id="TxFieldMarcaCosmeticos" layoutX="156.0" layoutY="98.0" prefHeight="26.0" prefWidth="487.0" />
+                              <TextField fx:id="TxFieldCodigoCosmeticos" layoutX="156.0" layoutY="135.0" prefHeight="26.0" prefWidth="487.0" />
+                              <TextField fx:id="TxFieldTipoCosmeticos" layoutX="156.0" layoutY="172.0" prefHeight="26.0" prefWidth="487.0" />
+                              <Button layoutX="297.0" layoutY="299.0" mnemonicParsing="false" onAction="#ManipulaAdicionaCosmetiscos" prefHeight="26.0" prefWidth="107.0" text="Adicionar" />
+                              <Button layoutX="631.0" layoutY="299.0" mnemonicParsing="false" onAction="#ManipulaBotoes" prefHeight="26.0" prefWidth="74.0" text="Voltar" />
+                           </children>
+                        </AnchorPane>
+                     </content>
+                  </Tab>
+              </tabs>
+            </TabPane>
+         </content>
+    </Tab>
+  </tabs>
+</TabPane>
